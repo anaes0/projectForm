@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form" id="formId">
+      <!-- Group: Name -->
+      <div class="form__group" id="group__name">
+        <label for="name" class="form__label"> <b>Name</b> </label>
+        <div class="form__group-input">
+          <input
+            type="text"
+            class="form__input"
+            name="name"
+            id="name"
+            placeholder="Anna Smith"
+          />
+          <i class="form__validation-status fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="form__input-error" id="form__input-error">
+          Name lenght: 4 - 30 digits and can only contain letters
+        </p>
+      </div>
+      <!-- Group: Email -->
+      <div class="form__group" id="group__email">
+        <label for="email" class="form__label"> <b>Email</b> </label>
+        <div class="form__group-input">
+          <input
+            type="email"
+            class="form__input"
+            name="email"
+            id="email"
+            placeholder="email@gmail.com"
+          />
+          <i class="form__validation-status fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="form__input-error">
+          Email can only contain letters, numbers, or these symbols: (. / - / _
+          )
+        </p>
+      </div>
+      <!-- Group: Phone -->
+      <div class="form__group" id="group__phone">
+        <label for="phone" class="form__label"> <b>Phone</b> </label>
+        <div class="form__group-input">
+          <input
+            type="text"
+            class="form__input"
+            name="phone"
+            id="phone"
+            placeholder="0830467822"
+          />
+          <i class="form__validation-status fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="form__input-error">Phone should contain 7 to 14 numbers</p>
+      </div>
+      <!-- Group: User Message -->
+      <div class="form__group" id="group__message">
+        <label for="message" class="form__label"> <b>Your message:</b> </label>
+        <div class="form__group-input">
+          <input
+            type="text"
+            class="form__input"
+            name="message"
+            id="message"
+            placeholder="Your message here"
+          />
+          <i class="form__validation-status fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="form__input-error">
+          Message only made by letters. Max length: 0 - 800 words
+        </p>
+      </div>
+      <!-- Group: Terms and conditions -->
+      <div class="form__group" id="group__terms">
+        <label class="form__label">
+          <input
+            class="form__checkbox"
+            type="checkbox"
+            name="terms"
+            id="terms"
+          />
+          I accept terms and conditions
+        </label>
+      </div>
+      <!-- Error message displayed when form not filled properly -->
+      <div class="form__msg-Displayed" id="form__msg-Displayed">
+        <p>
+          <i class="fa-solid fa-triangle-exclamation"></i
+          ><b> Error: </b> Please, fill the form properly.
+        </p>
+      </div>
+      <!-- Group: Button --><!-- Message when form sent succesfully -->
+      <div class="form__group form__group-btn-submit">
+        <button type="submit" class="form__btn">Submit</button>
+        <p class="form__msg-success" id="form__msg-success">
+          Form sent successfully!
+        </p>
+      </div>
+    </form>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b300901193.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
